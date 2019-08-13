@@ -5,13 +5,20 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@mdx-js/mdx": "^1.2.2",
+    "@mdx-js/react": "^1.2.2",
     "gatsby": "^2.13.39",
     "gatsby-image": "^2.2.6",
+    "gatsby-mdx": "^1.0.0",
     "gatsby-plugin-manifest": "^2.2.4",
+    "gatsby-plugin-mdx": "^1.0.23",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sharp": "^2.2.9",
-    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
+    "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-sharp": "^2.2.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -19,7 +26,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "styled-components": "^4.3.2"
   },
   "keywords": [
     "gatsby"
@@ -31,7 +39,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "analyze": "ANALYZE_BUNZLE_SIZE=true gatsby build"
   },
   "repository": {
     "type": "git",
